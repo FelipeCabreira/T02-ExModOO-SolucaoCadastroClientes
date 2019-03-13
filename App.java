@@ -23,6 +23,8 @@ public class App {
 
     public static void carregaDadosCliente() {
         // TODO: LER O ARQUIVO CSV DO MICROSOFT TEAMS
+        // CRIAR A CLASSE CLIENTE ( PARA ACESSAR OS DADOS AO INVES DE RECEBER OS DADOS POR ARRAY)
+        // 1 COLLECTION DE CLIENTE AO INVES DE 8 ARRAYS DE DADOS
 
 
 
@@ -36,7 +38,6 @@ public class App {
 
 
 
-        
         // PEGA O DIRETORIO DEFAULT
         String _dir = Paths.get("").toAbsolutePath().toString();
         // DIRETORIO DO ARQUIVO NOVO
