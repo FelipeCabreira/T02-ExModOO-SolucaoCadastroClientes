@@ -1,3 +1,4 @@
+import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class App{
@@ -18,6 +19,25 @@ public class App{
         }
         System.out.println("----------\n");
     }
+
+
+
+    public static void carregaDadosCliente() {
+        // PEGA O DIRETORIO DEFAULT
+        String _dir = Paths.get("").toAbsolutePath().toString();
+        // DIRETORIO DO ARQUIVO NOVO
+        String fileDir = _dir+"\\"+"dados-cliente.dat";
+        Path path = Paths.get(fileDir);
+
+        // try (PrintWriter writer = new PrintWriter(file)){
+        //     // LER LINHA POR LINHA DO ARQUIVO ( NEXTLINE ) USER SPLIT PELAS VIRGULAS
+
+
+        // } catch (Exception e) {
+        //     System.err.format("Erro de I/O: %s%n", e);
+        // }
+    }
+
 
     public static void main(String args[]) {
         CadastroClientes cc = new CadastroClientes();
